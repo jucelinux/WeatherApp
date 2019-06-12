@@ -5,7 +5,8 @@ import com.jucelinux.weatherapp.domain.model.ForecastList
 
 class RequestForecastCommand(
     private val zipCode: Long,
-    private val forecastProvider: ForecastProvider = ForecastProvider()) :
+    private val forecastProvider: ForecastProvider = ForecastProvider()
+) :
     Command<ForecastList> {
 
     companion object {
